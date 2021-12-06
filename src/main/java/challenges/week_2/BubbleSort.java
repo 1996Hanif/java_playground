@@ -9,7 +9,6 @@ public class BubbleSort {
         boolean sorted = false;
         int numSorted = 0;
         int temporaryHolder;
-        int counter = 0;
 
         for (int j = 0; j < input.toArray().length - 1; j++) {
             for (int i = 0; i < input.toArray().length - 1; i++) {
@@ -18,7 +17,6 @@ public class BubbleSort {
                     input.set(i, input.get(i + 1));
                     input.set(i + 1, temporaryHolder);
                 }
-                counter++;
             }
         }
 
