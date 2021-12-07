@@ -2,6 +2,7 @@ package challenges.week_2;
 
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.Iterator;
 
 public class ArrayMerge {
     private int[] array1;
@@ -59,18 +60,22 @@ public class ArrayMerge {
             remover.add(arrayCombined[i]);
         }
         int[] arrayCombinedNoDuplicates =  new int[remover.size()];
-        for (int i = 0; i < arrayCombinedNoDuplicates.length; i++) {
-      //      if (arrayCombined[])
-      //  }
-      //  return
+        Iterator<Integer> transfer = remover.iterator();
+        int next = 0;
+        while (transfer.hasNext()){
+            arrayCombinedNoDuplicates[next] = transfer.next();
+            next++;
+        }
+        return arrayCombinedNoDuplicates;
 
     }
 
     public static void main(String[] args) {
-        ArrayMerge arrayMerge = new ArrayMerge(new int[]{2,334,35},new int[]{23,3443,62});
+        ArrayMerge arrayMerge = new ArrayMerge(new int[]{2,334,35},new int[]{23,334,62});
         System.out.println(Arrays.toString(arrayMerge.CombinedArray()));
         System.out.println(Arrays.toString(arrayMerge.AccendingOrder()));
         System.out.println(Arrays.toString(arrayMerge.DescendingOrder()));
+        System.out.println(Arrays.toString(arrayMerge.DuplicateRemover()));
     }
 
 }
