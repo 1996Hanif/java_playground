@@ -161,14 +161,12 @@ public class BinaryTree implements BinaryTreeInterface{
         binaryTree.addElement(30);
         binaryTree.addElement(320);
         binaryTree.addElement(32);
+        binaryTree.addElement(240);
+        binaryTree.addElement(32);
+        binaryTree.addElement(70);
+        binaryTree.addElement(232);
         binaryTree.addElement(20);
-        binaryTree.addElement(2);
-        binaryTree.addElement(344);
-        binaryTree.addElement(34);
-        binaryTree.addElement(44);
-        binaryTree.addElement(3844);
-
-        int[] arrayOfNodes = {1,2,3,4};
+        int[] arrayOfNodes = {21,32,3,23};
         binaryTree.addElements(arrayOfNodes);
 
 

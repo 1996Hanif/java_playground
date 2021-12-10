@@ -25,6 +25,7 @@ public class SpartanTest {
     public void doTest(){
         //assertEquals(, spartan.getStartDate());
     }
+    //hooks
     @AfterEach
     void tearDown(TestInfo testInfo){
         System.out.println(testInfo.getDisplayName() + "has finished testing");
